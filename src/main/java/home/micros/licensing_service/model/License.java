@@ -3,6 +3,7 @@ package home.micros.licensing_service.model;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.hateoas.RepresentationModel;
 
 /**
  * @author S.Melekhin
@@ -11,7 +12,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class License {
+public class License extends RepresentationModel<License> {
 
     private int id;
     private String licenseId;
