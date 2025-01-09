@@ -1,1 +1,12 @@
-spring.application.name=Licensing service
+spring:
+  application:
+    name: Licensing service
+management:
+  endpoint:
+    health:
+      show-details: always
+  health:
+    db:
+      enabled: false
+    diskspace:
+      enabled: true
